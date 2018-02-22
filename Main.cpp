@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 int main(void) {
     // attempt to open the original image
-    cv::Mat imgOriginalScene = cv::imread("LOWER PLATE CMM - C4_Page_1.png");
+    cv::Mat imgOriginalScene = cv::imread("2189913_Radiallagergehäuse D30 links SW.png");
 
     // if the image was not opened successfully, show an error message and bail
     if (imgOriginalScene.empty()) {
