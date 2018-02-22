@@ -32,10 +32,10 @@ const double MAX_CHANGE_IN_AREA = 0.5;
 const double MAX_CHANGE_IN_WIDTH = 0.8;
 const double MAX_CHANGE_IN_HEIGHT = 0.2;
 
-const double MAX_ANGLE_BETWEEN_CHARS = 12.0;
+const double MAX_ANGLE_BETWEEN_CHARS = 20.0;
 
 // other constants
-const int MIN_NUMBER_OF_MATCHING_CHARS = 3;
+const int MIN_NUMBER_OF_MATCHING_CHARS = 2;
 
 const int MIN_CONTOUR_AREA = 70;
 

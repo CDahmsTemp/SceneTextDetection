@@ -31,6 +31,7 @@ void showPossibleTextAreaContours(std::vector<PossibleTextArea> possibleTextArea
 
     }
     cv::imshow("imgPossibleTextAreas", imgPossibleTextAreas);
+    cv::imwrite("imgPossibleTextAreas.png", imgPossibleTextAreas);
 }
 
 

@@ -5,6 +5,7 @@
 
 # all images due to signed NDA
 *.png
+*.bmp
 
 # User-specific files
 *.suo

@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 int main(void) {
     // attempt to open the original image
-    cv::Mat imgOriginalScene = cv::imread("2189913_Radiallagergehäuse D30 links SW.png");
+    cv::Mat imgOriginalScene = cv::imread("LOWER PLATE CMM - C4_Page_1.png");
 
     // if the image was not opened successfully, show an error message and bail
     if (imgOriginalScene.empty()) {
@@ -25,6 +25,7 @@ int main(void) {
 
     // show the original scene with the drawn-in text areas
     cv::imshow("imgSceneWithWriting", imgSceneWithWriting);
+    cv::imwrite("imgSceneWithWriting.png", imgSceneWithWriting);
 
     cv::waitKey();
 
