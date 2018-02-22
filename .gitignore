@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# all images due to signed NDA
+*.png
+
 # User-specific files
 *.suo
 *.user
