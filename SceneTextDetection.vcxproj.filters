@@ -24,6 +24,12 @@
     <ClCompile Include="DetectTextAreas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PossibleChar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PossibleTextArea.h">
@@ -33,6 +39,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PossibleChar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionUtilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -16,10 +16,10 @@ int main(void) {
 
     std::vector<PossibleTextArea> testAreas = detectTextAreas(imgOriginalScene);
 
-    cv::Mat imgOriginalSceneWithWriting = imgOriginalScene.clone();
+    cv::Mat imgSceneWithWriting = imgOriginalScene.clone();
 
 
-    cv::imshow("scene", imgOriginalSceneWithWriting);
+    cv::imshow("imgSceneWithWriting", imgSceneWithWriting);
 
     cv::waitKey();
 

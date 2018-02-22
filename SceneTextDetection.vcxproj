@@ -112,12 +112,16 @@
   <ItemGroup>
     <ClCompile Include="DetectTextAreas.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PossibleChar.cpp" />
     <ClCompile Include="PossibleTextArea.cpp" />
+    <ClCompile Include="VisionUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DetectTextAreas.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="PossibleChar.h" />
     <ClInclude Include="PossibleTextArea.h" />
+    <ClInclude Include="VisionUtilities.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
