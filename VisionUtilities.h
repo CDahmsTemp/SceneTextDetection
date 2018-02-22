@@ -10,11 +10,7 @@
 
 // function prototypes ////////////////////////////////////////////////////////////////////////////
 void showCharContours(std::vector<PossibleChar> possibleChars, cv::Size imageSize);
-
-
-
-
-
+void showPossibleTextAreaContours(std::vector<PossibleTextArea> possibleTextAreas, cv::Size imageSize);
 
 
 

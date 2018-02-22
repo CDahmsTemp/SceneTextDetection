@@ -43,6 +43,15 @@ const int MIN_CONTOUR_AREA = 70;
 std::vector<PossibleTextArea> detectTextAreas(cv::Mat &imgOriginalScene);
 std::vector<PossibleChar> findPossibleCharsInScene(std::vector<std::vector<cv::Point>> contours);
 bool checkIfPossibleChar(PossibleChar &possibleChar);
+std::vector<std::vector<PossibleChar> > findVectorOfVectorsOfMatchingChars(const std::vector<PossibleChar> &vectorOfPossibleChars);
+std::vector<PossibleChar> findVectorOfMatchingChars(const PossibleChar &possibleChar, const std::vector<PossibleChar> &vectorOfChars);
+double distanceBetweenChars(const PossibleChar &firstChar, const PossibleChar &secondChar);
+double angleBetweenChars(const PossibleChar &firstChar, const PossibleChar &secondChar);
+std::vector<PossibleChar> removeInnerOverlappingChars(std::vector<PossibleChar> &vectorOfMatchingChars);
+
+
+
+
 
 # endif	// DETECT_PLATES_H
 

@@ -3,25 +3,22 @@
 #ifndef POSSIBLE_TEXT_AREA_H
 #define POSSIBLE_TEXT_AREA_H
 
-#include <string>
+#include<string>
 #include<opencv2/opencv.hpp>
+
+#include"PossibleChar.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 class PossibleTextArea {
 public:
     // member variables ///////////////////////////////////////////////////////////////////////////
-    cv::Mat imgTextArea;
-    cv::Mat imgGrayscale;
-    cv::Mat imgThresh;
+    std::vector<PossibleChar> possibleChars;
 
-    cv::RotatedRect rrLocationOfPlateInScene;
-
-    std::string strChars;
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////
-    static bool sortDescendingByNumberOfChars(const PossibleTextArea &ptaLeft, const PossibleTextArea &ptaRight) {
-        return(ptaLeft.strChars.length() > ptaRight.strChars.length());
-    }
+    // ToDo: will have to change this to a cv::RotatedRect
+    cv::Rect boundingRect;
+    
+    // function prototypes ////////////////////////////////////////////////////////////////////////
+    PossibleTextArea(std::vector<PossibleChar> _possibleChars);
 
 };
 
